@@ -7,13 +7,44 @@
 </head>
 
 <body>
-    <div id="canvas">
-        <canvas width="400" height="400"></canvas>
-    </div>
+    <header>
+        <h1>SNAKE</h1>
+    </header>
+
+    <main>
+        <div class="menu-esquerdo">
+            <h2>CUSTOMIZAÇÃO</h2>
+        </div>
+
+        <div class="menu-direito">
+            <h2>Informações</h2>
+
+            <ul class="menu-direito__informacoes">
+                <li class="pontuacao-js">
+                    <h3>Pontuação:</h3>
+                </li>
+
+                <li>
+                    <h3>Tempo:</h3>
+                </li>
+            </ul>
+        </div>
+
+        <div class="centro">
+            <canvas width="400" height="400"></canvas>
+
+            <div class="centro__controle-mobile esconder">
+
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
 </body>
 
 <script src="./assets/js/Tabuleiro.js"></script>
 <script src="./assets/js/Maca.js"></script>
 <script src="./assets/js/Snake.js"></script>
 <script src="./assets/js/novo-jogo.js"></script>
+<script src="./assets/js/pontuacao.js"></script>
 

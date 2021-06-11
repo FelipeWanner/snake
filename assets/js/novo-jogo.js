@@ -10,10 +10,10 @@ window.onload = function () {
 
 function jogo() {
   snake.movimento();
-
   pincel.fillStyle = "black";
   pincel.fillRect(0, 0, tela.width, tela.height);  
   snake.pintaMaca(pincel);
   snake.pintaCobra(pincel);
   snake.novaMaca()
+  pontuacao()
 }

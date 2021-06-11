@@ -50,6 +50,7 @@ class Snake extends Maca {
                     break
                 }
             }
+            
             if(this.velocidadeY != -this.velocidade){
                 switch (evento.code) {
                     case "KeyS":
