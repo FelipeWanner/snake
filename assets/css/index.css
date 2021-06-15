@@ -28,3 +28,7 @@ main{
     grid-column: 3 / 4;
     grid-row: 1 / 2;
 }
+
+.menu-direito__informacoes__comecar{
+    background-color: blue;
+}
