@@ -1,14 +1,14 @@
 class Snake extends Maca {
     constructor() {
-        super();
-        this.posicaoX = 10;
-        this.posicaoY = 10;
-        this.velocidade = 1;
-        this.velocidadeY = this.velocidade;
-        this.velocidadeX = 0;
+        super()
+        this.posicaoX = 10
+        this.posicaoY = 10
+        this.velocidade = 1
+        this.velocidadeY = this.velocidade
+        this.velocidadeX = 0
 
-        this.tamanhoCauda = [];
-        this.cauda = 5;
+        this.tamanhoCauda = []
+        this.cauda = 5
     }
     
     comandos() { 
@@ -17,7 +17,7 @@ class Snake extends Maca {
         classe, PÓREM, uma ARROW FUNCTION tem um escopo lexico, ou seja, 
         global, e dessa forma, consigo acessar os this dentro da function do
         eventListener */
-        
+
         document.addEventListener("keydown",(evento) =>{
             // a cobra nunca pode voltar contra si mesma, e os "if" desta funcao testam isso
             // a condicao para o "switch" acontecer, é que a cobra não esteja indo na direção oposta do switch.
@@ -60,6 +60,7 @@ class Snake extends Maca {
                         break
                 }
             }
+            this.comecar()
         });
     }
 
@@ -107,5 +108,6 @@ class Snake extends Maca {
                 console.log("aiaia")
             }
         }
-    }
+    } 
+
 }
