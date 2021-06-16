@@ -5,8 +5,11 @@ const $pincel = tela.getContext("2d")
 window.onload = function () {
   setInterval(jogo, 100)
   snake.comandos()
-  console.log("pagina carregada!") 
-  snake.comecar() 
+  console.log("pagina carregada!")
+  // snake.comecar()
+
+  const btnComecar = document.querySelector('#comecar');
+  btnComecar.addEventListener('click', snake.comecar.bind(snake));
 }
 
 function jogo() {
@@ -18,3 +21,4 @@ function jogo() {
   snake.novaMaca()
   pontuacao()
 }
+
